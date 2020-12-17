@@ -1,0 +1,24 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Araba {
+public:
+    string model[3]={"mercedes","bmw","wolksvagen"};
+    
+};
+class modelSecme: public  Araba{
+	public:
+	void modelSec(int a);
+};
+void modelSecme::modelSec(int a){
+	cout<<model[a-1]<<endl;
+}
+
+int main() {
+    Araba araba1;
+	modelSecme modelsec1;
+	modelsec1.modelSec(2);
+    return 0;
+
+}
